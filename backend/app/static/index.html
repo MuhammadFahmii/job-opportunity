@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job List</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Job List</h1>
+        <div class="header-actions">
+          <button id="apply-all-btn" type="button">Auto Fill All</button>
+          <button id="refresh-btn" type="button">Refresh</button>
+        </div>
+      </header>
+
+      <section class="controls">
+        <label>
+          <span>Status</span>
+          <select id="status-select">
+            <option value="">All</option>
+            <option value="new">New</option>
+            <option value="saved">Saved</option>
+            <option value="applied">Applied</option>
+            <option value="skipped">Skipped</option>
+          </select>
+        </label>
+        <label class="check">
+          <input id="relevant-only" type="checkbox" checked />
+          <span>Relevant only</span>
+        </label>
+        <label class="check">
+          <input id="fresh-only" type="checkbox" checked />
+          <span>Fresh only</span>
+        </label>
+        <label>
+          <span>Per page</span>
+          <select id="page-size-select">
+            <option value="10">10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </label>
+      </section>
+
+      <p id="meta" class="meta">Loading jobs...</p>
+      <p id="batch-state" class="batch-state" hidden></p>
+      <p id="error" class="error" hidden></p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th data-sort-key="title">Title</th>
+              <th data-sort-key="company">Company</th>
+              <th data-sort-key="location">Location</th>
+              <th data-sort-key="posted_age">Posted</th>
+              <th data-sort-key="status">Status</th>
+              <th data-sort-key="source">Source</th>
+              <th>Open</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="jobs-body"></tbody>
+        </table>
+      </div>
+
+      <section class="pagination">
+        <button id="prev-btn" type="button">Prev</button>
+        <span id="page-info">Page 1 / 1</span>
+        <button id="next-btn" type="button">Next</button>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.Python
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage/
+
+# Virtualenvs
+.venv/
+venv/
+ENV/
+
+# Node
+node_modules/
+dist/
+build/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Playwright artifacts
+playwright-report/
+test-results/
+
+# Local app data (JobStreet automation)
+backend/.env
+backend/data/applicant_profile.json
+backend/data/jobs.db
+backend/data/apply-screenshots/
+backend/data/browser-profile/
+backend/exports/
+
+# Personal documents
+*.pdf

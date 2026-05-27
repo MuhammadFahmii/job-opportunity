@@ -1,0 +1,15 @@
+{
+  "full_name": "Muhammad Fahmi",
+  "email": "fahmi@example.com",
+  "phone": "+628123456789",
+  "current_location": "Jakarta, Indonesia",
+  "expected_salary": "Negotiable",
+  "notice_period": "Immediate",
+  "linkedin_url": "https://www.linkedin.com/in/username",
+  "github_url": "https://github.com/username",
+  "portfolio_url": "https://portfolio.example.com",
+  "default_answers": {
+    "experience": "I have hands-on experience building backend and fullstack web applications.",
+    "motivation": "I am interested in this role because it matches my web and backend engineering background."
+  }
+}

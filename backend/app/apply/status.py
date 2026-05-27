@@ -1,0 +1,9 @@
+APPLY_OPENED = "opened"
+APPLY_FILLED = "filled"
+APPLY_SUBMITTED = "submitted"
+APPLY_NEEDS_LOGIN = "needs_login"
+APPLY_NEEDS_MANUAL_INPUT = "needs_manual_input"
+APPLY_CAPTCHA_DETECTED = "captcha_detected"
+APPLY_FAILED = "failed"
+
+TERMINAL_SUCCESS = {APPLY_FILLED, APPLY_SUBMITTED}

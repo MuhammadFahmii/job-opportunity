@@ -1,0 +1,187 @@
+:root {
+  --bg: #f5f7fb;
+  --panel: #ffffff;
+  --text: #12202f;
+  --muted: #596b7d;
+  --line: #d8e0ea;
+  --accent: #0a7d58;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+button,
+select {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--text);
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #b9c8d7;
+}
+
+.controls {
+  margin-top: 14px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.check input {
+  width: 16px;
+  height: 16px;
+}
+
+.meta {
+  margin: 14px 0 8px;
+  color: var(--muted);
+}
+
+.error {
+  margin: 8px 0;
+  color: #b42318;
+}
+
+.batch-state {
+  margin: 8px 0;
+  color: #0a5f42;
+}
+
+.table-wrap {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.pagination {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#page-info {
+  color: var(--muted);
+  min-width: 110px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 860px;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--line);
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+td:last-child {
+  min-width: 220px;
+}
+
+th {
+  background: #f0f5fb;
+  color: #304255;
+}
+
+th[data-sort-key] {
+  cursor: pointer;
+  user-select: none;
+}
+
+th[data-sort-key]:hover {
+  background: #e8f0fa;
+}
+
+th.sort-asc::after {
+  content: " \2191";
+  color: #4a5a69;
+}
+
+th.sort-desc::after {
+  content: " \2193";
+  color: #4a5a69;
+}
+
+tbody tr:hover {
+  background: #f9fbfe;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.apply-btn {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.apply-state {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
