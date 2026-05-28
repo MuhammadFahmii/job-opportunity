@@ -7,6 +7,7 @@ Python backend for daily job fetch + CV scoring.
 ```bash
 cd backend
 python3 -m pip install --user -r requirements.txt
+python3 -m playwright install chromium
 cp .env.example .env
 ```
 
